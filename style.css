@@ -1,0 +1,270 @@
+/* --------- Color System --------- */
+:root {
+  --text-color: #3B2E41;
+  --background-color: #FAF7F5;
+  --primary-color: #BFA3A0;   
+  --secondary-color: #D9C5B2; 
+  --accent-color: #7C3F4B;    
+  --light-card: #FFFFFF;
+}
+
+/* --------- Base Styles --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  color: #2A1F33;
+}
+
+p {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------- Accessibility --------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+/* --------- Layout Helpers --------- */
+.section-inner,
+.header-inner,
+.footer-inner,
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --------- Header --------- */
+.site-header {
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  padding: 70px 0 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.site-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-tagline {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* --------- Navigation --------- */
+.site-nav {
+  background-color: var(--accent-color);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+.site-nav a {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FAF7F5;
+  font-weight: 700;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* --------- Hero --------- */
+.hero {
+  padding: 60px 0 50px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-image {
+  border-radius: 8px;
+  border: 1px dashed #CBB9C5;
+  background-color: var(--light-card);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #8D7A8B;
+}
+
+.hero-heading {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.05rem;
+}
+
+/* --------- About Section --------- */
+.about {
+  padding: 40px 0 20px;
+  border-top: 1px solid #E3D8D2;
+  border-bottom: 1px solid #E3D8D2;
+}
+
+.about .section-inner {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.about p {
+  font-size: 1.05rem;
+}
+
+/* --------- Editorial Section --------- */
+.editorial {
+  padding: 60px 0 80px;
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 3rem;
+}
+
+.main-article,
+.sidebar-block {
+  background-color: var(--light-card);
+  border-radius: 8px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.main-article h3 {
+  font-size: 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #8A7582;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-block h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.98rem;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #7A6775;
+}
+
+.video-placeholder {
+  border-radius: 6px;
+  border: 1px dashed #CBB9C5;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #8D7A8B;
+}
+
+/* --------- Footer --------- */
+.site-footer {
+  border-top: 1px solid #E3D8D2;
+  padding: 20px 0 25px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6B5A69;
+}
+
+.site-footer a {
+  text-decoration: underline;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 900px) {
+  .hero-inner,
+  .editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
