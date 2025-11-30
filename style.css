@@ -252,6 +252,137 @@ blockquote {
   text-decoration: underline;
 }
 
+/* Voices of Ink page */
+
+.page-header {
+  padding: 60px 0 20px;
+  border-bottom: 1px solid #E3D8D2;
+}
+
+.page-header .section-inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.page-header h2 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  color: #7A6775;
+}
+
+.authors-intro {
+  padding: 25px 0 10px;
+}
+
+.authors-intro .section-inner {
+  max-width: 800px;
+}
+
+.authors-intro p {
+  font-size: 1.02rem;
+}
+
+.authors-table {
+  padding: 30px 0 70px;
+}
+
+.authors-table .section-inner {
+  max-width: 900px;
+}
+
+.authors-table h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* main table style */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.styled-table thead {
+  background-color: var(--secondary-color);
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+}
+
+.styled-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: #2A1F33;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #F2ECE7;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #E8DDD7;
+}
+
+.styled-table tbody td {
+  vertical-align: top;
+}
+
+/* Branding Her Story page */
+
+.branding-header {
+  padding: 60px 0 20px;
+  border-bottom: 1px solid #E3D8D2;
+}
+
+.branding-header .section-inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.branding-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.branding-header .page-subtitle {
+  font-size: 1.05rem;
+  color: #7A6775;
+}
+.branding-feature {
+  padding: 50px 0 80px;
+}
+
+.branding-feature .section-inner {
+  max-width: 900px;
+}
+
+.branding-feature .hero-image {
+  background-color: var(--light-card);
+  border-radius: 10px;
+  border: 1px dashed #CBB9C5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: #8D7A8B;
+}
+section {
+  margin-bottom: 60px;
+}
+
 /* --------- Responsive --------- */
 @media (max-width: 900px) {
   .hero-inner,
