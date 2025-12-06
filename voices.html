@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voices of Ink | Ink & Identity</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voices of Ink | Ink &amp; Identity</title>
 
+  <meta name="description" content="Voices of Ink highlights women authors whose storytelling and branding leave lasting impressions." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <!-- ===================== HEADER ===================== -->
   <header class="site-header">
     <div class="header-inner">
-      <h1 class="site-title">Ink & Identity</h1>
+      <h1 class="site-title">Ink &amp; Identity</h1>
       <p class="site-tagline">Celebrating Independent Female Authors Through Design</p>
     </div>
   </header>
 
+  <!-- ===================== NAVIGATION ===================== -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="voices.html">Voices of Ink</a></li>
+      <li><a href="voices.html" class="active">Voices of Ink</a></li>
       <li><a href="branding.html">Branding Her Story</a></li>
       <li><a href="hidden.html">The Hidden Chapter</a></li>
-      <li><a href="connect.html">Connect & Collaborate</a></li>
+      <li><a href="connect.html">Connect &amp; Collaborate</a></li>
     </ul>
   </nav>
 
+  <!-- ===================== MAIN ===================== -->
   <main id="main-content">
 
-    <!-- PAGE HEADER -->
+    <!-- Page header -->
     <section class="page-header">
       <div class="section-inner">
         <h2>Voices of Ink</h2>
@@ -40,71 +48,83 @@
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="page-section authors-intro">
+    <!-- Intro + Hero -->
+    <section class="page-section voices-intro">
       <div class="section-inner">
-        <p>
+
+        <!-- Hero image of Ana Huang books -->
+        <img
+          src="images/voices_hero.jpg"
+          alt="Row of Ana Huang's Twisted series books displayed together"
+          class="branding-hero-img"
+        />
+        <p class="image-caption">
+          A glimpse at contemporary romance branding through Ana Huang’s <em>Twisted</em> series.
+        </p>
+
+        <p class="voices-intro-text">
           Independent women authors bring a richness to contemporary literature that blends emotional depth
-          with bold storytelling. Their books aren’t just read—they’re experienced through branding choices that
-          reflect romance, fantasy, identity, and empowerment.
-          <em>Voices of Ink</em> highlights a curated selection of indie and crossover women writers whose visual identities 
-          are as compelling as the stories they tell.
+          with bold storytelling. Their books aren’t just read—they’re experienced through branding choices
+          that reflect romance, fantasy, identity, and empowerment. <strong>Voices of Ink</strong> highlights a
+          curated selection of indie and crossover women writers whose visual identities are as compelling as
+          the stories they tell.
         </p>
       </div>
     </section>
 
-    <!-- TABLE SECTION -->
+    <!-- Table of featured authors -->
     <section class="page-section authors-table">
       <div class="section-inner">
-        <h3>Featured Authors</h3>
+        <article class="card">
+          <h3>Featured Authors</h3>
 
-        <table class="styled-table">
-          <thead>
-            <tr>
-              <th>Author</th>
-              <th>Book Title</th>
-              <th>Genre</th>
-              <th>Brand Identity Notes</th>
-            </tr>
-          </thead>
+          <table class="author-table">
+            <thead>
+              <tr>
+                <th>Author</th>
+                <th>Book Title</th>
+                <th>Genre</th>
+                <th>Brand Identity Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ana Huang</strong></td>
+                <td><em>Twisted Love</em></td>
+                <td>Romance</td>
+                <td>Moody neutrals, minimalist typography, and soft dramatic lighting that match the emotional tension of the series.</td>
+              </tr>
+              <tr>
+                <td><strong>Raven Kennedy</strong></td>
+                <td><em>Gild</em></td>
+                <td>Fantasy</td>
+                <td>Metallic gold foiling, ornate detailing, and rich textures that signal high fantasy and decadent, layered world-building.</td>
+              </tr>
+              <tr>
+                <td><strong>Ali Hazelwood</strong></td>
+                <td><em>The Love Hypothesis</em></td>
+                <td>STEM Romance</td>
+                <td>Pastel palettes, illustrated covers, and playful modern sans-serif fonts that emphasize warmth, humor, and accessibility.</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <tbody>
-            <!-- Author 1 -->
-            <tr>
-              <td><strong>Ana Huang</strong></td>
-              <td><em>Twisted Love</em></td>
-              <td>Romance</td>
-              <td>Moody neutrals, minimalist typography, soft dramatic lighting.</td>
-            </tr>
-
-            <!-- Author 2 -->
-            <tr>
-              <td><strong>Raven Kennedy</strong></td>
-              <td><em>Gild</em></td>
-              <td>Fantasy</td>
-              <td>Metallic gold foiling, ornate detailing, luxurious fantasy aesthetics.</td>
-            </tr>
-
-            <!-- Author 3 -->
-            <tr>
-              <td><strong>Ali Hazelwood</strong></td>
-              <td><em>The Love Hypothesis</em></td>
-              <td>STEM Romance</td>
-              <td>Pastel palettes, illustrated covers, playful modern sans-serif fonts.</td>
-            </tr>
-          </tbody>
-        </table>
+          <p class="section-end-note muted">
+            Future updates will introduce more indie women authors and analyze how their covers communicate genre, tone, and identity at a glance.
+          </p>
+        </article>
       </div>
     </section>
 
   </main>
 
+  <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p>
-        <a href="mailto:example@email.com">Contact</a> · 
-        <a href="https://reedsy.com" target="_blank">Resources</a> · 
-        © 2025 Ink & Identity
+        <a href="connect.html">Contact</a> ·
+        <a href="https://reedsy.com" target="_blank">Resources</a> ·
+        © 2025 Ink &amp; Identity
       </p>
     </div>
   </footer>
